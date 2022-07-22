@@ -1,0 +1,1563 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* ------------------------------------------------------- */
+.dropdown-menu
+{
+    background: #0F0D0D; 
+}
+
+.dropdown-item
+{
+    color: #fff;
+}
+
+.dropdown-item:hover
+{
+    color: #0F0D0D;
+}
+
+.dropdown-divider
+{
+    background: #fff;
+}
+/* -------------------------------------------------------- */
+.login-783
+{
+   visibility: hidden;
+   width: 0;
+   height: 0;
+}
+
+body
+{
+    position: relative;
+    background: linear-gradient(180deg, rgba(81, 115, 204, 0) 0%, #17378B 100%);
+}
+
+.nav01
+{
+    text-align: center;
+    top: 0;
+    background: #0B1F3B; 
+}
+
+.cont
+{
+    position: sticky;
+}
+
+/* NAVBAR --------------------------------------------------------------------------------------------*/
+
+.box
+{
+    background: #0B1F3B;
+    /* border: 1px solid #fff;  */
+    padding: 10px;
+    color: #fff; 
+}
+
+.cont
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* justify-items: stretch; */
+}
+
+.logo1
+{
+    float: right;
+}
+
+.logo1:hover
+{
+    background: radial-gradient(50% 50% at 50% 50%, 
+    rgba(255, 0, 0, 0.54) 0%, 
+    rgba(255, 0, 19, 0.54) 0.01%, 
+    rgba(25, 91, 152, 0) 100%), 
+    #0B1F3B;
+}
+
+.pesquisa
+{
+    grid-column: 2/4;
+}
+
+.barra_navegacao
+{
+    grid-column: 1/5;
+    height: auto;
+}
+
+.box-1, .box-2, .box-3
+{
+   height: 7rem;
+}
+
+.menu-icon
+{
+    right: 0;
+    height: 0;
+}
+
+.campo-pesquisa
+{
+    margin-top: 2.5rem; 
+    width: 70%;
+    height: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0;
+    border: 0 none;
+    outline: none;
+    text-align:left;
+    border: 1px solid #FF0000;
+}
+
+
+.botao-pesquisa
+{
+    height: 3rem;
+    width: 3rem;
+}
+
+.botao_pesquisa
+{
+    width: 100%;
+}
+
+.botao-login
+{
+    list-style: none;
+}
+
+.login_
+{
+   float: left;
+    margin-top: 1.7rem;
+}
+
+.login
+{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    margin-top: 0.9rem;
+    border-radius: 7%;
+}
+
+.login:hover
+{
+    background: #FF0000;
+}
+
+#conteudo-login
+{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.item_log2
+{
+    height: 100%;
+}
+
+#conteudo-carrinho
+{
+   visibility: hidden;
+   position: absolute;
+}
+
+#conteudo-carrinho p
+{
+    width: 100%;
+    text-align:left;
+}
+
+.carrinho:hover #conteudo-carrinho
+{
+   visibility: visible;
+    position: absolute;
+}
+
+#conteudo-favoritos
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+.favoritos:hover #conteudo-favoritos
+{
+    visibility: visible;
+}
+
+.botao-login:hover #conteudo-login
+{
+    position: absolute;
+    visibility: visible;
+    height: 1px;
+    width: 1px;
+}
+
+.itemDaNav
+{
+    font-weight: bold;
+}
+
+.itemDaNav:hover
+{
+    text-decoration: underline 1.5px solid red;
+}
+.item_nav .dropdown-menu
+{
+    background: #0F0D0D;
+    
+}
+
+.item_nav .dropdown-item
+{
+    color: #fff;
+}
+
+.dropdown-item:hover
+{
+    color: #0F0D0D;
+}
+
+.dropdown-divider
+{
+    background: #fff;
+}
+
+/* CARROSSEL - SLIDE -------------------------------------------------------------------------------------*/
+
+.item-texto-carrossel
+{
+    width: 100%;
+    margin-top: 30%;
+    height: 40%;
+    margin-bottom: 30%;
+    text-align: center;
+}
+
+.texto-carrosssel
+{
+    width: 50%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.imagem-carrossel
+{
+    margin-top: 0.3rem;
+    width: 100%;
+}
+
+.botao_carrossel-esquerdo
+{
+    margin-left: -5%;
+}
+
+.botao_carrossel-direito
+{
+    margin-right: -5%;
+}
+.carousel-caption  
+{
+    margin-bottom: 5rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+.btn-vermais
+{
+    margin-top: 1rem;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.btn-vermais:hover
+{
+    color: #FF0000;
+}
+
+/* BANNER - PROMOÇÕES------------------------------------------------------------------------------------- */
+
+.box-promo-box
+{
+
+    background: linear-gradient(180deg, #0B1F3B 53.48%, #000000 100%);
+    margin-top: 0.3rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    
+    grid-template-areas: 
+    /* 1                       2               3                4              5                 6 */
+    "box-promo-titulo box-promo-titulo box-promo-titulo box-promo-titulo box-promo-titulo box-promo-titulo  "
+    "box-promo-destaque box-promo-destaque box-promo-destaque box-promo-destaque box-promo-item1  box-promo-item3"
+    "box-promo-destaque box-promo-destaque box-promo-destaque box-promo-destaque box-promo-item1  box-promo-item3"
+    "box-promo-destaque box-promo-destaque box-promo-destaque box-promo-destaque box-promo-item2  box-promo-item4"
+    "box-promo-destaque box-promo-destaque box-promo-destaque box-promo-destaque box-promo-item2  box-promo-item4" 
+    "box-promo-botao box-promo-botao box-promo-botao box-promo-botao box-promo-botao box-promo-botao"
+}
+/* ----------------------------------- */
+.box-promo-titulo
+{
+    grid-area: box-promo-titulo;
+    background: #0B1F3B;
+}
+
+.titulo-prom
+{
+    margin-top: 1rem;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.titulo-prom:hover
+{
+    background: radial-gradient(50% 50% at 50% 50%, 
+    rgba(255, 0, 0, 0.54) 0%, 
+    rgba(255, 0, 19, 0.54) 0.01%, 
+    rgba(25, 91, 152, 0) 100%), 
+    #0B1F3B;
+}
+/* ------------------------------------- */
+.box-promo-destaque
+{
+    grid-area: box-promo-destaque;
+   
+    align-items: center;
+}
+
+.link-promo
+{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.img-promo
+{
+    width: 100%;
+}
+
+.link-promo:hover
+{
+    opacity: 0.5;
+}
+
+.destaque-texto-promo
+{
+    margin-top: 1rem;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+}
+
+/* -------------------------------------- */
+.box-promo-item1
+{
+    grid-area: box-promo-item1;
+}
+
+.img-promo-item
+{
+    width: 100%;
+}
+
+.texto-promo-item
+{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* -------------------------------------- */
+.box-promo-item2
+{
+    grid-area: box-promo-item2;
+    
+}
+/* --------------------------------------- */
+.box-promo-item3
+{
+    grid-area: box-promo-item3;
+    
+}
+
+.box-promo-item4
+{
+    grid-area: box-promo-item4;
+   
+}
+
+.box-promo-botao
+{
+    grid-area: box-promo-botao;
+}
+
+/* CARROSSEL SMARTPHONES------------------------------------------------------------------------------------- */
+
+#smartphones
+{
+    margin-top: 0.3rem;
+    background: linear-gradient(180deg, #110707 53.48%, #FF0000 100%);
+}
+
+.box-smartphone-box
+{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "box1 box2 box3";
+    margin-bottom: 1rem;
+}
+
+.box-smartphone-titulo
+{
+    height: 4rem;
+}
+
+.titulo-smartphone
+{
+    margin-top: 1rem;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.titulo-smartphone:hover
+{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(12, 32, 60, 0.54) 0%, 
+    rgba(255, 0, 19, 0.54) 0.01%, 
+    rgba(18, 8, 8, 0.54) 100%),
+    linear-gradient(0deg, #120808, #120808);
+}
+
+
+.box-smartphone-item1, .box-smartphone-item2, .box-smartphone-item3
+{
+    background: linear-gradient(180deg, #0C203C 0%, rgba(12, 32, 60, 0.74) 100%);
+    border-radius: 15px;
+}
+
+.box-smartphone-item1
+{
+    grid-area: box1;
+}
+
+.box-smartphone-item2
+{
+    grid-area: box2;
+}
+
+.box-smartphone-item3
+{
+    grid-area: box3;
+}
+
+.smartphone-link-item
+{
+    width: 100%;
+}
+
+.smartphone-link-item:hover
+{
+    opacity: 0.3;
+}
+
+.smartphone-img-item
+{
+    width: 100%;
+}
+
+.smartphone-texto-item
+{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.smartphone-botao-item
+{
+    width: 3rem;
+}
+
+.botao-smartphone-esquerdo
+{
+    margin-left: -5%;
+}
+
+.botao-smartphone-direito
+{
+    margin-right: -5%;
+}
+
+.indicadores-smartphone
+{
+    display: none;
+}
+
+/* NOVIDADES ----------------------------------------------------------------------- */
+
+.box-novidades-box
+{
+    margin-top: 0.3rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: 
+    "d-box1 d-box1 d-box1 d-box1 d-box1 d-box1"
+    "d-box3 d-box2 d-box2 d-box2 d-box2 d-box5"
+    "d-box4 d-box2 d-box2 d-box2 d-box2 d-box6"
+    "d-box7 d-box7 d-box7 d-box7 d-box7 d-box7";
+    color: #fff;
+    background: linear-gradient(180deg, #0B1F3B 53.48%, #000000 100%);
+}
+/* .box-novidades{
+    border: 1px solid red;
+} */
+
+/* Título----------------- */
+.box-novidades-titulo
+{
+    grid-area: d-box1;
+}
+
+.titulo-novidades
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.titulo-novidades:hover
+{
+    background: radial-gradient(50% 50% at 50% 50%, 
+    rgba(255, 0, 0, 0.54) 0%, 
+    rgba(255, 0, 19, 0.54) 0.01%,
+    rgba(25, 91, 152, 0) 100%), 
+    #0B1F3B;
+}
+
+/* Item em destaque */
+.box-novidades-destaque
+{
+    grid-area: d-box2;
+}
+
+.link-novidades
+{
+    width: 100%;
+}
+
+.link-novidades:hover
+{
+    opacity: 0.5;
+}
+
+.texto-novidades-destaque
+{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.img-novidades
+{
+    width: 100%;
+}
+.img-novidades-destaque
+{
+    margin-left: 20%;
+    width: 60%;
+    
+}
+/* Item 1 */
+.box-novidades-item1
+{
+    grid-area: d-box3;
+}
+
+.texto-novidades
+{
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Item 1 */
+.box-novidades-item2
+{
+    grid-area: d-box4;
+}
+
+/* Item 1 */
+.box-novidades-item3
+{
+    grid-area: d-box5;
+}
+
+/* Item 1 */
+.box-novidades-item4
+{
+    grid-area: d-box6;
+}
+
+.box-novidades-botao
+{
+    grid-area: d-box7;
+}
+/* ACESSÓRIOS ----------------------------------------------------------------------------------- */
+
+#acessorios
+{
+    margin-top: 0.3rem;
+    background: linear-gradient(180deg, #110707 53.48%, #FF0000 100%);
+}
+
+.box-acessorios-box
+{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-column-gap: 1.5rem;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: "a-box1 a-box2 a-box3 a-box4 a-box5";
+    margin-bottom: 1rem;
+}
+
+.box-acessorios-titulo
+{
+    height: 4rem;
+}
+
+.titulo-acessorios
+{
+    margin-top: 1rem;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.titulo-acessorios:hover
+{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(12, 32, 60, 0.54) 0%, 
+    rgba(255, 0, 19, 0.54) 0.01%, 
+    rgba(18, 8, 8, 0.54) 100%),
+    linear-gradient(0deg, #120808, #120808);
+}
+
+
+.box-acessorios
+{
+    background: linear-gradient(180deg, #0C203C 0%, rgba(12, 32, 60, 0.74) 100%);
+    border-radius: 10px;
+}
+
+.box-acessorios-item1
+{
+    grid-area: a-box1;
+}
+
+.box-acessorios-item2
+{
+    grid-area: a-box2;
+}
+
+.box-acessorios-item3
+{
+    grid-area: a-box3;
+}
+
+.box-acessorios-item4
+{
+    grid-area: a-box4;
+}
+
+.box-acessorios-item5
+{
+    grid-area: a-box5;
+}
+
+.acessorios-link-item
+{
+    width: 100%;
+}
+
+.acessorios-link-item:hover
+{
+    opacity: 0.3;
+}
+
+.acessorios-img-item
+{
+    width: 100%;
+}
+
+.acessorios-texto-item
+{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.acessorios-botao-item
+{
+    width: 3rem;
+}
+
+.botao-acessorios-esquerdo
+{
+    margin-left: -5%;
+}
+
+.botao-acessorios-direito
+{
+    margin-right: -5%;
+}
+
+.indicadores-acessorios
+{
+    display: none;
+}
+
+/* RODAPÉ */
+.rodape
+{
+    margin-top: 0.3rem;
+    background: #fff;
+}
+.box-rodape-box
+{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-areas: "r-box1 r-box1 r-box1 r-box1 r-box1 r-box1 r-box1 r-box1 r-box1"
+                         "r-box2 r-box2 r-box2 r-box3 r-box3 r-box3 r-box4 r-box4 r-box4"                   
+}       
+
+.box-rodape-item1
+{
+    grid-area: r-box1;
+}
+
+.box-rodape-item2
+{
+    grid-area: r-box2;
+}
+
+.box-rodape-item3
+{
+    grid-area: r-box3;
+}
+
+.box-rodape-item4
+{
+    grid-area: r-box4;
+}
+
+.link-topo
+{
+    text-decoration: none;
+    width: 100%;
+}
+
+.link-topo:hover
+{
+    text-decoration: underline 1px solid #FF0000;
+}
+
+.icone-rodape-topo
+{
+    margin-left: 0.5rem;
+    font-size: 20px;
+    color: #0B1F3B;
+}
+
+.voltar-topo
+{
+    width: 100%;
+    text-align: right;
+    color: #0B1F3B;
+    font-size: 16px;
+}
+
+.coluna1-rodape, .coluna2-rodape
+{
+    list-style-type: none;
+}
+
+.coluna2-rodape
+{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.link-item-rodape
+{
+    text-decoration: none;
+}
+
+.link-item-rodape:hover
+{
+    text-decoration: underline 1px solid #FF0000;
+}
+
+.link-item-rodape:hover .icone-rodape
+{
+    color: #FF0000;
+}
+
+.texto-col-rodape
+{
+    color: #0B1F3B;
+    font-size: 14px;
+}
+
+.icone-rodape
+{
+    color: #0B1F3B;
+    margin-right: 0.5rem;
+    font-size: 18px;
+}
+
+.icone-rodape-write
+{
+    color: #0B1F3B;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+    font-size: 12px;
+}
+
+.icone-facebook:hover
+{
+    color: #3b5998;
+}
+
+.icone-twitter:hover
+{
+    color: #00aced;
+}
+
+.icone-youtube:hover
+{
+    color: #bb0000
+}
+
+.icone-instagram:hover
+{
+    color:#517fa4;
+}
+
+/* ----------------------- */
+.parte2-rodape
+{
+    background: #0B1F3B;
+}
+.box-rodape2
+{
+    width:100%;
+    
+}
+.box2-rodape-box
+{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-areas: "r2-box1 r2-box1 r2-box2 r2-box2 r2-box3 r2-box3 r2-box4 r2-box4"
+                         "r2-box5 r2-box5 r2-box5 r2-box5 r2-box5 r2-box5 r2-box5 r2-box5";  
+}
+
+.box-rodape2-item1
+{
+    grid-area: r2-box1;
+}
+.box-rodape2-item2
+{
+    grid-area: r2-box2;
+}
+.box-rodape2-item3
+{
+    grid-area: r2-box3;
+}
+.box-rodape2-item4
+{
+    grid-area: r2-box4;
+}
+
+.box-rodape2-item5
+{
+    grid-area: r2-box5;
+}
+
+.texto-rodape2-1
+{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.texto-rodape2-2
+{
+    margin-top: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.link-rodape2
+{
+    text-decoration: none;
+}
+@media(max-width:991px)
+{
+    /* NAVBAR */
+    .menu-icon
+    {
+        right: 3rem;
+        height: 3rem;
+    }
+    .campo-pesquisa
+    {
+        margin-top: 2.5rem; 
+        width: 60%;
+        height: 3rem;
+        border-radius: 10px;
+        box-shadow: 0 0 0;
+        border: 0 none;
+        outline: none;
+        text-align:left;
+        border: 1px solid #FF0000;
+    }
+    /* SLIDE - CARROSSEL */
+    
+}
+
+/* ############################################################################################### */
+
+@media(max-width:783px)
+{
+    .dropdown-menu
+    {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+   
+    /* NAVBAR */
+    
+    .logo1
+    {
+        float: none;
+    }
+
+    .logo_imagem
+    {
+        width: 90px;
+        height: 90px;
+    }
+
+    .login-783
+    {
+        visibility:visible;
+        width: auto;
+        height: auto;
+    }
+
+    .item-783
+    {
+        margin: 1.2rem;
+    }
+
+    .cont
+    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        "n-box1 n-box1 n-box1 n-box1"
+        "n-box2 n-box2 n-box2  n-box2"  
+    }
+
+    .box-1
+    {
+        grid-area: n-box1;
+        height: 6rem;
+    }
+    
+    .box-2
+    {
+        grid-area: n-box2;
+        height: 4rem;
+    }
+
+    .box-3
+    {
+        grid-area: none;
+        display: none;
+    }
+
+    .botao_pesquisa
+    {
+        margin: none;
+        float: right;
+    }
+    .campo-pesquisa
+    {
+        margin-top: 0;
+        margin-top: 0;
+        width: 75%;
+    }
+    .login_
+    {
+        float: none;
+        margin-top: 0;
+    }
+
+    .itemDaNav
+    {
+        float: left;
+        margin-left: 0;
+    }
+
+
+    /* --------------------------------------------------- */
+   /* SLIDE CARROSSEL */
+
+    /* PROMOÇÕES---------------------------------------------- */
+    .texto-promo-item
+    {
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+    }
+    .box-promo-box
+    {
+
+        margin-top: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    
+        grid-template-areas: 
+        /* 1                       2               3                4              5                 6 */
+        "box-promo-titulo box-promo-titulo box-promo-titulo box-promo-titulo box-promo-titulo box-promo-titulo  "
+        "box-promo-destaque box-promo-destaque box-promo-destaque box-promo-destaque box-promo-destaque  box-promo-destaque"
+        "box-promo-item1  box-promo-item1 box-promo-item1  box-promo-item2 box-promo-item2  box-promo-item2"
+        "box-promo-item3  box-promo-item3 box-promo-item3  box-promo-item4 box-promo-item4  box-promo-item4"
+        "box-promo-botao box-promo-botao box-promo-botao box-promo-botao box-promo-botao box-promo-botao"
+    }
+
+    /* SMARTPHONES ---------------------------------------------------------------------*/
+
+    .box-smartphone-box
+    {
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-column-gap: 3rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "box1 box2";
+    }
+
+    .box-smartphone-titulo
+    {
+        height: 4rem;
+    }
+
+    .titulo-smartphone
+    {
+        margin-top: 1rem;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+
+    .box-smartphone-item1, .box-smartphone-item2, .box-smartphone-item3
+    {
+        background: linear-gradient(180deg, #0C203C 0%, rgba(12, 32, 60, 0.74) 100%);
+        border-radius: 15px;
+    }
+
+    .box-smartphone-item1
+    {
+        grid-area: box1;
+    }
+
+    .box-smartphone-item2
+    {
+        grid-area: box2;
+    }
+
+    .box-smartphone-item3
+    {
+        grid-area:none;
+        display: none;
+    }
+
+    .smartphone-link-item
+    {
+        width: 100%;
+    }
+
+    .smartphone-img-item
+    {
+        width: 100%;
+    }
+
+    .smartphone-texto-item
+    {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    /* Novidades ------------------------------------------------------------------*/
+
+    .box-novidades-box
+    {
+        margin-top: 0.3rem;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        "d-box1 d-box1 d-box1 d-box1 d-box1 d-box1"
+        "d-box2 d-box2 d-box2 d-box2 d-box2 d-box2"
+        "d-box3 d-box3 d-box3 d-box4 d-box4 d-box4"
+        "d-box5 d-box5 d-box5 d-box6 d-box6 d-box6"
+        "d-box7 d-box7 d-box7 d-box7 d-box7 d-box7";
+        color: #fff;
+        background: linear-gradient(180deg, #0B1F3B 53.48%, #000000 100%);
+    }
+
+    .img-novidades-item
+    {
+        width: 80%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* ACESSÓRIOS------------------------------------------------------------------- */
+    .box-acessorios-box
+    {
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-column-gap: 1.5rem;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: "a-box1 a-box2 a-box3";
+        margin-bottom: 1rem;
+    }
+    .box-acessorios-item1
+    {
+        grid-area: a-box1;
+    }
+
+    .box-acessorios-item2
+    {
+        grid-area: a-box2;
+    }
+
+    .box-acessorios-item3
+    {
+        grid-area: a-box3;
+    }
+
+    .box-acessorios-item4
+    {
+        display: none;
+        grid-area: none;
+    }
+
+    .box-acessorios-item5
+    {
+        display: none;
+        grid-area: none;
+    }
+    /* RODAPE ------------------------------------------------------------------*/
+    
+    
+    .box-rodape-box
+    {
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-areas: "r-box1 r-box1 r-box1 r-box1 r-box1 r-box1 r-box1 r-box1"
+                              "r-box3 r-box3 r-box3 r-box3 r-box4 r-box4 r-box4 r-box4"                   
+    }       
+
+    .box-rodape-item1
+    {
+        grid-area: r-box1;
+    }
+
+    .box-rodape-item2
+    {
+        grid-area: none;
+        display: none;
+    }
+
+    .box-rodape-item3
+    {
+        grid-area: r-box3;
+    }
+
+    .box-rodape-item4
+    {
+        grid-area: r-box4;
+    }
+    
+    
+    .texto-col-rodape
+    {
+        color: #0B1F3B;
+        font-size: 12px;
+    }
+
+    .voltar-topo
+    {
+        font-size: 14px;
+    }
+
+    .suporte-texto
+    {
+        color: #0B1F3B;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* ------------------- */
+    .texto-rodape2-1
+    {
+        font-size: 14px;
+    }
+    .texto-rodape2-2
+    {
+        font-size: 12px;
+    }
+} 
+
+@media(max-width:583px)
+{
+    /* NAVBAR */
+
+
+    .logo1
+    {
+        float: none;
+    }
+
+    .logo_imagem
+    {
+        width: 90px;
+        height: 90px;
+    }
+    .box-1
+    {
+        height: 6rem;
+    }
+
+    .campo-pesquisa
+    {
+        width: 70%;
+    }
+
+    .box-2
+    {
+        height: 4rem;
+    }
+
+    /* .login_favoritos
+    {
+        grid-column: 5/5;
+    } */
+    .login_
+    {
+        /* float: right; */
+        margin-top: 0;
+        
+    }
+    .item_log
+    {
+        margin-right: 0;
+    }
+    .itemDaNav
+    {
+        float: left;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+    
+    .item_log1
+    {
+        margin-left: 0;
+    }
+
+   /* ----------------------------------------------------------- */
+   /* SLIDE CARROSSEL */
+   
+    /* SMARTPHONES ----------------------------------------------------------- */
+    .box-smartphone-box
+    {
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-column-gap: 3rem;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "box1";
+    }
+
+    .box-smartphone-item1
+    {
+        grid-area: box1;
+    }
+
+    .box-smartphone-item2
+    {
+        grid-area: none;
+        display: none;
+    }
+    /* ACESSÓRIOS------------------------------------------------------------------- */
+    .box-acessorios-box
+    {
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-column-gap: 1.5rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "a-box1 a-box2";
+        margin-bottom: 1rem;
+    }
+    .box-acessorios-item1
+    {
+        grid-area: a-box1;
+    }
+
+    .box-acessorios-item2
+    {
+        grid-area: a-box2;
+    }
+
+    .box-acessorios-item3
+    {
+        grid-area: none;
+        display: none;
+    }
+
+    .box-acessorios-item4
+    {
+        display: none;
+        grid-area: none;
+    }
+
+    .box-acessorios-item5
+    {
+        display: none;
+        grid-area: none;
+    }
+
+    /* --------------------------------------- */
+    .texto-rodape2-1
+    {
+        font-size: 12px;
+    }
+    .texto-rodape2-2
+    {
+        font-size: 10px;
+    }
+} 
+
+@media(max-width:438px)
+{
+    .btn-vermais
+    {
+        margin-top: 1rem;
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+        border: none;
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+    /* NAVBAR */
+    .menu-icon
+    {
+        right: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .logo
+    {
+        grid-column: 1/5;
+    }
+
+    .logo1
+    {
+        float: none;
+    }
+
+    .logo_imagem
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .box-1
+    {
+        height: 5rem;
+    } 
+    
+    .box-2, .box-3
+    {
+        height: 4rem;
+        /* border: 1px solid red */
+    }
+
+    .botao-pesquisa
+    {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+   
+    .login
+    {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .item_log
+    {
+        margin-right: 0;
+    }
+    .itemDaNav
+    {
+        float: left;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+    
+    .campo-pesquisa
+    {
+        width: 60%;
+        height: 2.5rem;
+    }
+
+    .item_log1
+    {
+        margin-left: 0;
+    }
+
+   /* ----------------------------------------------------------- */
+   /* SLIDE CARROSSEL */
+
+    .texto-carrosssel
+    {
+        margin-top: 2.3rem;
+        font-size: 13px;
+    }
+   
+    /* PROMOÇÕES------------------------------------------------------- */
+    .texto-promo
+    {
+        font-size: 12px;
+    }
+    /* Novidades-------------------------------------------------------- */
+    .texto-novidades
+    {
+        font-size: 12px;
+    }
+
+    /* RODAPÉ ------------------------------------------------------------ */
+    .suporte-texto
+    {
+        font-size: 12px;
+    }
+    
+    .coluna2-rodape
+    {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .link-item-rodape
+    {
+        text-decoration: none;
+    }
+
+    .link-item-rodape:hover
+    {
+    text-decoration: underline 1px solid #FF0000;
+    }
+
+    .link-item-rodape:hover .icone-rodape
+    {
+        color: #FF0000;
+    }
+
+    .texto-col-rodape
+    {
+        color: #0B1F3B;
+        font-size: 10px;
+    }
+
+    .icone-rodape
+    {
+        color: #0B1F3B;
+        margin-right: 0.5rem;
+        font-size: 12px;
+    }
+
+    .icone-rodape-write
+    {
+        color: #0B1F3B;
+        margin-top: 0.2rem;
+        margin-left: 0.5rem;
+        font-size: 10px;
+    }
+
+    .rede-social-2
+    {
+        font-size: 12px;
+    }
+
+    /* ----------------------------------- */
+    .texto-rodape2-1
+    {
+        font-size: 9px;
+    }
+    .texto-rodape2-2
+    {
+        font-size: 9px;
+    }
+   
+}
