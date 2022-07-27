@@ -4,10 +4,7 @@ const item3 = document.querySelector('.box-smartphone-item3');
 const item4 = document.querySelector('.box-smartphone-item4');
 const item5 = document.querySelector('.box-smartphone-item5');
 const item6 = document.querySelector('.box-smartphone-item6');
-
-const tamTela1 = window.matchMedia('(max-width: 768px)') && window.matchMedia('(max-width: 1000px)');
-const tamTela2 = window.matchMedia('(max-width: 1000px)');
-const tamTela3 = window.matchMedia('(max-width: 1200px)');
+// -----------------------------------------------------------
 
 let tamItem = '';
 let alturaItem = '';
@@ -125,7 +122,11 @@ item6.addEventListener("mouseout", function (e) {
     item6.style = "grid-area = box3";
 })
 
+// ---------------------------------------------------------------
+// let img = document.querySelector('.logo_imagem');
+// let info2 = img.getAttribute('src');
 
+// console.log(info2)
 
 // ---------------------------------------------------------------
 $(document).ready(function () {
