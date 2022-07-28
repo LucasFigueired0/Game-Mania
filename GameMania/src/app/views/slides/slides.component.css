@@ -1,0 +1,62 @@
+/* CARROSSEL - SLIDE -------------------------------------------------------------------------------------*/
+
+.carrossel
+{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.item-texto-carrossel {
+    width: 100%;
+    margin-top: 30%;
+    height: 40%;
+    margin-bottom: 30%;
+    text-align: center;
+}
+
+.texto-carrosssel {
+    width: 50%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.imagem-carrossel {
+    margin-top: 0.3rem;
+    width: 100%;
+}
+
+.botao_carrossel-esquerdo {
+    margin-left: -5%;
+}
+
+.botao_carrossel-direito {
+    margin-right: -5%;
+}
+
+.carousel-caption {
+    margin-bottom: 5rem;
+}
+
+@media(max-width: 783px)
+{
+    .texto-carrosssel {
+        margin-top: 2.3rem;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 583px)
+{
+    .texto-carrosssel {
+        margin-top: 2.3rem;
+        font-size: 16px;
+    }
+}
+@media(max-width:438px) {
+    /* ----------------------------------------------------------- */
+    /* SLIDE CARROSSEL */
+    .texto-carrosssel {
+        margin-top: 2.3rem;
+        font-size: 14px;
+    }
+}
