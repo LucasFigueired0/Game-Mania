@@ -1,0 +1,19 @@
+<form #userForm="ngForm" class="container area-login" (ngSubmit)="onSubmit()">
+    <h3 class="titulo-login">Entrar em minha conta</h3>
+    <br>
+    <div class="form-group">
+        <input type="email" name="email" class="form-control entrada-email" id="email" aria-describedby="emailHelp"
+            placeholder="Seu email" [(ngModel)]="userModel.email">
+        <br>
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="password" name="senha" class="form-control entrada-senha" id="senha" placeholder="senha"
+            [(ngModel)]="userModel.senha">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-dark botao-submit">Entrar</button>
+    <br>
+    <p class="texto-link">Novo cliente?<a class="link" href="#"> Criar conta</a></p>
+    <p class="texto-link texto-link2">Esqueceu a senha?<a class="link" href="#"> Recuperar senha</a></p>
+</form>
