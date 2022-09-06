@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy:gdocs": "ng build --configuration production --aot --output-path docs --base-href /Game-mania/"
   },
   "private": true,
   "dependencies": {
