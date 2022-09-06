@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy:gdocs": "ng build --configuration production --aot --output-path docs --base-href /Game-mania/"
+    "deploy:gdocs": "ng build --output-path docs --base-href /Game-mania/"
   },
   "private": true,
   "dependencies": {
